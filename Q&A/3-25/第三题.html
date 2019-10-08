@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>当前时间</title>
+    <style>
+        #p{
+            float: left;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+    
+<body>
+    <p id="demo"></p>
+    <script>
+        // var myVar=setInterval(function()},10000);
+        var myVar = setInterval(function () { myTimer() }, 1000);
+        function myTimer() {
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById("demo").innerHTML = t;
+        }
+    </script>
+</body>
+
+</html>

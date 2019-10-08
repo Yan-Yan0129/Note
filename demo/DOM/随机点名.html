@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <div id="name1"></div>
+    <button id="btn">停止</button>
+</body>
+<script>
+    var flag = true;
+    var str = "刘公子,莫小姐,张妹妹,赵公子";
+    var arr = str.split(",");
+    var interId = setInterval("randName()", 10);
+    function randName() {
+        var rand = Math.floor(Math.random() * arr.length);
+        name1.innerHTML = arr[rand];
+    }
+    btn.onclick = function () {
+        if (flag) {
+            btn.innerHTML = "开始";
+            clearInterval(interId);
+            flag = false;
+        } else {
+
+            btn.innerHTML = "停止";
+            interId = setInterval("randName()", 10);
+            flag = true;
+        }
+    }
+</script>
+
+</html>

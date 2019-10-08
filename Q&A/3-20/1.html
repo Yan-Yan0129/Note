@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一题</title>
+</head>
+<body>
+        <!-- 新建一个需要求得数组取名arr，在建一个留着输出偶数的一个库，利用FOR循环，i=1，i小于求的那个数组的长度判断成功
+        执行if求偶，求数组偶数==0，然后在给存储新数组添加个新元素最后输出到新数组，再次循环…………………… -->
+    <script>
+        var arr=[5,10,6,11,18,22,31,52,19];
+        var num=[];
+        for(var i=1;i<arr.length;i++){
+            if(arr[i]%2==0){
+                num.push(arr[i]);
+            }
+        }console.log(num);
+    </script>
+</body>
+</html>

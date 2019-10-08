@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一题</title>
+    <style>
+        .bg {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="vue.js"></script>
+    <div id="app">
+        <button type="button" v-on:click="submit()">+</button>
+        {{ (count +0)*1}}
+        <button type="button" v-on:click="submite()">-</button>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                count: 0
+            },
+            methods: {
+                submit: function () {
+                    this.count++
+                },
+                submite: function () {
+                    this.count--
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

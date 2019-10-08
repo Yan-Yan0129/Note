@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>练习题</title>
+</head>
+
+<body>
+    <!-- 第一题 -->
+    <script>
+        var p = 0;
+        function fun(n) {
+            for (var i = 1; i <= n; i++) {
+                p += i;
+            }
+        } fun(5);
+        console.log(p); 
+    </script>
+
+
+
+
+
+
+    <!-- 第二题 -->
+    <script>
+        function fun(m,o,n){
+            switch(o){
+            case"+":return m+n;break;
+            case"-":return m-n;break;
+            case"*":return m*n;break;
+            case"/":return m/n;break;
+            }
+        }
+        var num=fun(5,"+",6)
+        console.log(num)
+    </script>
+
+        <!-- 第三题 -->
+        <script>
+            var res=0;
+            function fun(m){
+                for(var i=1;i<10;i++){
+                    if(i%2==1){
+                        res+=i
+                    }
+                }
+            }fun(10);
+            console.log(res);
+            </script>
+</body>
+
+</html>
